@@ -1,0 +1,9 @@
+# Code editors and IDE files
+.vscode/
+.idea/
+
+# WSL for Windows
+*Zone.Identifier
+
+# macOS
+.DS_Store
