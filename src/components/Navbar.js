@@ -1,62 +1,66 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./assets/Navbar.scss";
 
 export default function Navbar(props) {
+  const handleBurger = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    nav.classList.toggle("nav-active");
+
+    // animate links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s`;
+      }
+    });
+
+    // burger anim
+    burger.classList.toggle("toggle");
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <NavLink to="/" exact className="navbar-brand">
+    <nav>
+      <div className="brand">
+        <NavLink to="/" exact>
           Potentia Robotics
         </NavLink>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink
-                to="/"
-                exact
-                activeClassName="active"
-                className="nav-link"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/about"
-                activeClassName="active"
-                className="nav-link"
-              >
-                Our Mission
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/blog" activeClassName="active" className="nav-link">
-                Devlog
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/contact"
-                activeClassName="active"
-                className="nav-link"
-              >
-                Contact Us
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <ul className="nav-links">
+        <li>
+          {" "}
+          <NavLink to="/" exact activeClassName="active-link">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          {" "}
+          <NavLink to="/about" activeClassName="active-link">
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/blog" activeClassName="active-link">
+            Blog
+          </NavLink>
+        </li>
+        <li>
+          {" "}
+          <NavLink to="/contact" activeClassName="active-link">
+            Contact Us
+          </NavLink>
+        </li>
+      </ul>
+      <div className="burger" onClick={handleBurger}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
     </nav>
   );

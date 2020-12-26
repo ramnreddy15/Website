@@ -27,6 +27,12 @@ dist
 .env.test.local
 .env.production.local
 
+# sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
 # eslint
 .eslintcache
 
