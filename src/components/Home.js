@@ -15,7 +15,7 @@ export default function Home(props) {
       <div className="landing-subheader">
         <p>
           The{" "}
-          <a href="https://tjhsst.edu" target="_blank" rel="noreferrer">
+          <a href="https://tjhsst.fcps.edu/" target="_blank" rel="noreferrer">
             Thomas Jefferson High School for Science and Technology
           </a>{" "}
           Humanoid Robot Project
