@@ -10,22 +10,19 @@ export default function Home(props) {
     <main className="hero">
       <div className="landing-header">
         <h1 id="potentia">Potentia</h1>
-        <h1 id="robotics">Robotics.</h1>
+        <h1 id="robotics">Robotics</h1>
       </div>
       <div className="landing-subheader">
         <p>
-          The{" "}
-          <a href="https://tjhsst.fcps.edu/" target="_blank" rel="noreferrer">
-            Thomas Jefferson High School for Science and Technology
-          </a>{" "}
-          Humanoid Robot Project
+        Moving into the future, one step at a time 
         </p>
       </div>
       <img
         className="landing-robot"
-        src={BOT_IMAGES[Math.floor(Math.random() * BOT_IMAGES.length)]}
+        src={BOT_IMAGES[1]}
         alt=""
-      />
+      />    
+      
     </main>
   );
 }
