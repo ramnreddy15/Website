@@ -1,30 +1,93 @@
 import React, {Component} from "react";
+import emailjs from "emailjs-com";
+
+// export default function ContactForm() {
+
+//   function sendEmail(event) {
+//     event.preventDefault();
+
+//     emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//       event.target.reset();
+  
+//   }
+
+//   return (
+//     <form onSubmit={sendEmail}>
+//       <label>Name</label>
+//       <input type="text" name="name" />
+//       <label>Email</label>
+//       <input type="email" name="email" />
+//       <label>Subject</label>
+//       <textarea name="subject" />
+//       <label>Message</label>
+//       <textarea name="message" />
+//       <input type="submit" value="Send" />
+//     </form>
+//   );
+// }
 
 class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: 'Write your full name here.',
-      email: 'Write your email here.',
-      subject: 'Write why you are writing here.',
-      message: 'Write your message here.'
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this);
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleSubjectChange = this.handleSubjectChange.bind(this);
+    this.handleMessageChange = this.handleMessageChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleChange(event) {
-    this.setState({name: event.target.name});
-    this.setState({email: event.target.email});
-    this.setState({subject: event.target.subject});
-    this.setState({message: event.target.message});
+  handleNameChange(event) {
+    this.setState({ 
+      name: event.target.value 
+    });
   }
 
-  handleSubmit(event) {
+  handleEmailChange(event) {
+    this.setState({ 
+      email: event.target.value 
+    });
+  }
+
+  handleSubjectChange(event) {
+    this.setState({ 
+      subject: event.target.value 
+    });
+  }
+
+  handleMessageChange(event) {
+    this.setState({ 
+      message: event.target.value 
+    });
+  }
+
+  async handleSubmit(event) {
     alert('You will get and email from us shortly!');
-    alert('These are the details you have submitted!' + this.state.name);
+    alert('These are the details you have submitted!');
+    alert(this.state.name);
+    alert(this.state.email);
+    alert(this.state.subject);
+    alert(this.state.message);
+
     event.preventDefault();
+
+    emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      event.target.reset();
   }
 
   render() {
@@ -32,19 +95,19 @@ class ContactForm extends Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Name:
-          <input type="text" name={this.state.name} onChange={this.handleChange} />
+          <input type="text" name="name" onChange={this.handleNameChange} />
         </label>
         <label>
           Email:
-          <input type="text" email={this.state.email} onChange={this.handleChange} />
+          <input type="email" name="email" onChange={this.handleEmailChange} />
         </label>
         <label>
           Subject:
-          <textarea nasubjectme={this.state.nasubjectme} onChange={this.handleChange} />
+          <textarea  name="subject" onChange={this.handleSubjectChange} />
         </label>
         <label>
           Message:
-          <textarea name={this.state.message} onChange={this.handleChange} />
+          <textarea  name="message" onChange={this.handleMessageChange} />
         </label>
         <input type="submit" value="Submit" />
       </form>
