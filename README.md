@@ -11,6 +11,11 @@ cd website
 npm i
 ```
 
+After installing the dependencies make sure to install yarn by doing:
+```
+npm install -g yarn
+```
+
 # Running
 After you've set up the project for the first time, simply run:
 ```
