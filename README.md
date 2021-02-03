@@ -2,6 +2,22 @@
 
 Source for TJHRC's website built with Sanity and React.
 
+# Setup
+When setting this project up for the first time, first download Node.js if you haven't already from here: https://nodejs.org/en/download/.
+
+Then clone the project and run:
+```
+cd website
+npm i
+```
+
+# Running
+After you've set up the project for the first time, simply run:
+```
+yarn start
+```
+And you should see the website load and show up in your browser, at the address https://http://localhost:3000/. 
+
 ## Available Scripts
 
 In the project directory, you can run:
