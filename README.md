@@ -3,17 +3,16 @@
 Source for TJHRC's website built with Sanity and React.
 
 # Setup
-When setting this project up for the first time, first download Node.js if you haven't already from here: https://nodejs.org/en/download/.
+When setting this project up for the first time, first download Node.js if you haven't already from here: https://nodejs.org/en/download/, and install yarn:
+
+```
+npm install -g yarn
+```
 
 Then clone the project and run:
 ```
 cd website
-npm i
-```
-
-After installing the dependencies make sure to install yarn by doing:
-```
-npm install -g yarn
+yarn install
 ```
 
 # Running
