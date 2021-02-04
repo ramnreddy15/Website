@@ -34,6 +34,14 @@ const StyledInput = styled.input`
   ${sharedStyles}
 `;
 
+const StyledTextAreaSubject = styled.textarea`
+  background-color: #eee;
+  width: 100%;
+  min-height: 60px;
+  resize: none;
+  ${sharedStyles}
+`;
+
 const StyledTextArea = styled.textarea`
   background-color: #eee;
   width: 100%;
@@ -68,5 +76,6 @@ export {
     StyledInput,
     StyledTextArea,
     StyledButton,
-    StyledError
+    StyledError,
+    StyledTextAreaSubject
 };

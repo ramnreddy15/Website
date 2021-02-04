@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import emailjs from "emailjs-com";
 import styled, {createGlobalStyle} from 'styled-components';
-import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, sharedStyles} from "./assets/StyledContactForm.js";
+import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, sharedStyles, StyledTextAreaSubject} from "./assets/StyledContactForm.js";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -97,7 +97,7 @@ class ContactForm extends Component {
               onChange={this.handleEmailChange}
             />
             <label htmlFor="subject">Subject</label>
-            <StyledTextArea
+            <StyledTextAreaSubject
               name="subject"
               onChange={this.handleSubjectChange}
             />
