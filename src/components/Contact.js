@@ -1,35 +1,21 @@
 import React, {Component} from "react";
 import emailjs from "emailjs-com";
+import styled, {createGlobalStyle} from 'styled-components';
+import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, sharedStyles} from "./assets/StyledContactForm.js";
 
-// export default function ContactForm() {
 
-//   function sendEmail(event) {
-//     event.preventDefault();
+const GlobalStyle = createGlobalStyle`
+  html {
+    height: 100%
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    color: #555;
+  }
+`;
 
-//     emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//       event.target.reset();
-  
-//   }
-
-//   return (
-//     <form onSubmit={sendEmail}>
-//       <label>Name</label>
-//       <input type="text" name="name" />
-//       <label>Email</label>
-//       <input type="email" name="email" />
-//       <label>Subject</label>
-//       <textarea name="subject" />
-//       <label>Message</label>
-//       <textarea name="message" />
-//       <input type="submit" value="Send" />
-//     </form>
-//   );
-// }
 
 class ContactForm extends Component {
   constructor(props) {
@@ -91,27 +77,40 @@ class ContactForm extends Component {
   }
 
   render() {
+
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" onChange={this.handleNameChange} />
-        </label>
-        <label>
-          Email:
-          <input type="email" name="email" onChange={this.handleEmailChange} />
-        </label>
-        <label>
-          Subject:
-          <textarea  name="subject" onChange={this.handleSubjectChange} />
-        </label>
-        <label>
-          Message:
-          <textarea  name="message" onChange={this.handleMessageChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    );
+      <>
+        <GlobalStyle />
+        <StyledFormWrapper>
+          <StyledForm onSubmit={this.handleSubmit}>
+            <h2>Contact Form</h2>
+            <label htmlFor="name">Name</label>
+            <StyledInput
+              type="text"
+              name="name"
+              onChange={this.handleNameChange}
+            />
+            <label htmlFor="email">Email</label>
+            <StyledInput
+              type="email"
+              name="email"
+              onChange={this.handleEmailChange}
+            />
+            <label htmlFor="subject">Subject</label>
+            <StyledTextArea
+              name="subject"
+              onChange={this.handleSubjectChange}
+            />
+            <label htmlFor="message">Message</label>
+            <StyledTextArea
+              name="message"
+              onChange={this.handleMessageChange}
+            />
+            <StyledButton type="submit">Send Message</StyledButton>
+          </StyledForm>
+        </StyledFormWrapper>
+      </>
+  );
   }
 }
 
