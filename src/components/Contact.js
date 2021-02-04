@@ -16,15 +16,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-
 class ContactForm extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      error:''
     };
 
     this.handleNameChange = this.handleNameChange.bind(this);
@@ -33,6 +34,7 @@ class ContactForm extends Component {
     this.handleMessageChange = this.handleMessageChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
   handleNameChange(event) {
     this.setState({ 
       name: event.target.value 
@@ -58,14 +60,23 @@ class ContactForm extends Component {
   }
 
   async handleSubmit(event) {
+    event.preventDefault();
+    var i = 0;
+    for (let key in this.state) {
+      if (this.state[key] === '' && i<4) {
+        this.setState({error: `You must provide a ${key}`});
+        return
+      }
+      i++;
+    }
+    this.setState({error: ``});
+
     alert('You will get and email from us shortly!');
     alert('These are the details you have submitted!');
     alert(this.state.name);
     alert(this.state.email);
     alert(this.state.subject);
     alert(this.state.message);
-
-    event.preventDefault();
 
     emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
       .then((result) => {
@@ -106,6 +117,11 @@ class ContactForm extends Component {
               name="message"
               onChange={this.handleMessageChange}
             />
+            <StyledError>
+              <p>{this.state.error}</p> 
+              <p></p>
+            </StyledError>
+            
             <StyledButton type="submit">Send Message</StyledButton>
           </StyledForm>
         </StyledFormWrapper>
