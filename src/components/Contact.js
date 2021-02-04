@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%
   }
   body {
+    background-color: #293241;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
@@ -118,8 +119,7 @@ class ContactForm extends Component {
               onChange={this.handleMessageChange}
             />
             <StyledError>
-              <p>{this.state.error}</p> 
-              <p></p>
+              <p>{this.state.error}</p>
             </StyledError>
             
             <StyledButton type="submit">Send Message</StyledButton>

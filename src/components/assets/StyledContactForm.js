@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle, css } from 'styled-components';
 
 const sharedStyles = css`
-  background-color: #eee;
+  background-color: #ccc;
   height: 40px;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -22,11 +22,13 @@ const StyledForm = styled.form`
   width: 100%;
   max-width: 700px;
   padding: 40px;
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: #eee;
+  color: #3d5a80;
   box-sizing: border-box;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(250, 250, 250, 0.4);
 `;
+
+  // border-radius: 10px; (if we want a round form)
 
 const StyledInput = styled.input`
   display: block;
@@ -35,7 +37,7 @@ const StyledInput = styled.input`
 `;
 
 const StyledTextAreaSubject = styled.textarea`
-  background-color: #eee;
+  background-color: #98c1d9;
   width: 100%;
   min-height: 60px;
   resize: none;
@@ -43,7 +45,7 @@ const StyledTextAreaSubject = styled.textarea`
 `;
 
 const StyledTextArea = styled.textarea`
-  background-color: #eee;
+  background-color: #98c1d9;
   width: 100%;
   min-height: 100px;
   resize: none;
@@ -51,7 +53,7 @@ const StyledTextArea = styled.textarea`
 `;
 const StyledButton = styled.button`
   display: block;
-  background-color: #f7797d;
+  background-color: #ee6c4d;
   color: #fff;
   font-size: 0.9rem;
   border: 0;
