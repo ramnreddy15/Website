@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./assets/Navbar.scss";
+import logo from "./assets/img/logo_tr_bg.png"
 
 export default function Navbar(props) {
   const handleBurger = () => {
@@ -29,7 +30,7 @@ export default function Navbar(props) {
     <nav>
       <div className="brand">
         <NavLink to="/" exact>
-          Potentia Robotics
+          <img src={logo} className="nav-logo"></img>
         </NavLink>
       </div>
       <ul className="nav-links">
@@ -46,14 +47,39 @@ export default function Navbar(props) {
           </NavLink>
         </li>
         <li>
+          {" "}
+          <NavLink to="/timeline" activeClassName="active-link">
+            Timeline
+          </NavLink>
+        </li>
+        <li>
+          {" "}
+          <NavLink to="/olympian" activeClassName="active-link">
+            Meet Olympian
+          </NavLink>
+        </li>
+        <li>
+          {" "}
           <NavLink to="/blog" activeClassName="active-link">
             Blog
           </NavLink>
         </li>
         <li>
           {" "}
+          <NavLink to="/sponsors" activeClassName="active-link">
+            Sponsors
+          </NavLink>
+        </li>
+        <li>
+          {" "}
           <NavLink to="/contact" activeClassName="active-link">
             Contact Us
+          </NavLink>
+        </li>
+        <li>
+          {" "}
+          <NavLink to="/donate" activeClassName="active-link">
+            Donate
           </NavLink>
         </li>
       </ul>
