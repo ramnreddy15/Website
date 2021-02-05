@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import emailjs from "emailjs-com";
-import styled, {createGlobalStyle} from 'styled-components';
-import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, sharedStyles, StyledTextAreaSubject, ButtonSet} from "./assets/StyledContactForm.js";
-import './assets/contact.css'
+import {createGlobalStyle} from 'styled-components';
+import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, StyledTextAreaSubject, ButtonSet} from "./assets/StyledContactForm.js";
+import './assets/contact.scss'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -104,7 +104,7 @@ class ContactForm extends Component {
     return (
       <>
         <GlobalStyle />
-        <StyledFormWrapper>
+        <StyledFormWrapper id="backUp">
           <StyledForm onSubmit={this.handleSubmit}>
             <h2>Contact Form</h2>
             <label htmlFor="name">Name</label>
@@ -136,11 +136,14 @@ class ContactForm extends Component {
             <StyledButton type="submit">Send Message</StyledButton>
           </StyledForm>
         </StyledFormWrapper>
-        <button2 onClick={() => this.scrollDown("goHere")}>⤋ Or Find Us At ⤋ <span><br></br></span>⤋</button2>
+        <button2 onClick={() => this.scrollDown("goHere")}>⤋ Or Find Us At ⤋</button2>
         <ButtonSet id="goHere">
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-github"></a>
+          <a href="#" className="fa fa-linkedin"></a>
+          <a href="#" className="fa fa-youtube"></a>
+          <a href="#" className="fa fa-github"></a>
+          <a href="#" className="fa fa-instagram"></a>
+          <a href="#" className="fa fa-facebook"></a>
+          <button onClick={() => this.scrollDown("backUp")} className="fa fa-envelope"></button>
         </ButtonSet>
       </>
   );
