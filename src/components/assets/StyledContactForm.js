@@ -63,6 +63,12 @@ const StyledButton = styled.button`
   padding: 0 20px;
   cursor: pointer;
   box-sizing: border-box;
+
+  :hover {
+		background-color: #3D5A80;
+		cursor: pointer;
+    opacity:0.7;
+	}
 `;
 
 const StyledError = styled.div`
