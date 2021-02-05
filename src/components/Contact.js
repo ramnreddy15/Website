@@ -138,11 +138,16 @@ class ContactForm extends Component {
         </StyledFormWrapper>
         <button2 onClick={() => this.scrollDown("goHere")}>⤋ Or Find Us At ⤋</button2>
         <ButtonSet id="goHere">
-          <a href="#" className="fa fa-linkedin"></a>
-          <a href="#" className="fa fa-youtube"></a>
-          <a href="#" className="fa fa-github"></a>
-          <a href="#" className="fa fa-instagram"></a>
-          <a href="#" className="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/in/potentia-robotics-790582204/" target="_blank" className="fa fa-linkedin"></a>
+          <span><br></br></span>
+          <a href="https://www.youtube.com/channel/UCKzWtwtWSejKt9THR_XlU7Q" target="_blank" className="fa fa-youtube"></a>
+          <span><br></br></span>
+          <a href="https://github.com/tjhrc" target="_blank" className="fa fa-github"></a>
+          <span><br></br></span>
+          <a href="#" target="_blank" className="fa fa-instagram"></a>
+          <span><br></br></span>
+          <a href="https://www.facebook.com/potentiarobotics/" target="_blank" className="fa fa-facebook"></a>
+          <span><br></br></span>
           <button onClick={() => this.scrollDown("backUp")} className="fa fa-envelope"></button>
         </ButtonSet>
       </>

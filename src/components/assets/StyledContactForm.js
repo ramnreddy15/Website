@@ -15,7 +15,7 @@ const StyledFormWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: -125px;
+  margin-top: -3.7vw;
   padding: 0 20px;
 `;
 
@@ -72,13 +72,12 @@ const StyledError = styled.div`
 `;
 
 const ButtonSet = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-top: -125px;
+  margin-top: 2vw;
+  vertical-align: middle;
+  text-align: center;
   padding: 0 20px;
 `;
+
 export default StyledFormWrapper;
 
 export {
