@@ -15,6 +15,7 @@ const StyledFormWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: -125px;
   padding: 0 20px;
 `;
 
@@ -69,6 +70,15 @@ const StyledError = styled.div`
   font-weight: 800;
   margin: 0 0 40px 0;
 `;
+
+const ButtonSet = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -125px;
+  padding: 0 20px;
+`;
 export default StyledFormWrapper;
 
 export {
@@ -79,5 +89,6 @@ export {
     StyledTextArea,
     StyledButton,
     StyledError,
-    StyledTextAreaSubject
+    StyledTextAreaSubject,
+    ButtonSet
 };

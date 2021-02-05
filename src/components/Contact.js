@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import emailjs from "emailjs-com";
 import styled, {createGlobalStyle} from 'styled-components';
-import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, sharedStyles, StyledTextAreaSubject} from "./assets/StyledContactForm.js";
-
+import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, sharedStyles, StyledTextAreaSubject, ButtonSet} from "./assets/StyledContactForm.js";
+import './assets/contact.css'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -34,6 +34,7 @@ class ContactForm extends Component {
     this.handleSubjectChange = this.handleSubjectChange.bind(this);
     this.handleMessageChange = this.handleMessageChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.scrollDown = this.scrollDown.bind(this);
   }
 
   handleNameChange(event) {
@@ -88,6 +89,16 @@ class ContactForm extends Component {
       event.target.reset();
   }
 
+  scrollDown(id) {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest"
+    });
+    
+  }
+
   render() {
 
     return (
@@ -125,9 +136,16 @@ class ContactForm extends Component {
             <StyledButton type="submit">Send Message</StyledButton>
           </StyledForm>
         </StyledFormWrapper>
+        <button2 onClick={() => this.scrollDown("goHere")}>⤋ Or Find Us At ⤋ <span><br></br></span>⤋</button2>
+        <ButtonSet id="goHere">
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-github"></a>
+        </ButtonSet>
       </>
   );
   }
 }
+
 
 export default ContactForm;
