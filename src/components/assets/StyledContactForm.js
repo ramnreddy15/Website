@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const sharedStyles = css`
   background-color: #ccc;
-  height: 40px;
+  height: .5vw;
   border-radius: 5px;
   border: 1px solid #ddd;
   margin: 10px 0 20px 0;
@@ -14,14 +14,14 @@ const StyledFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: -3.7vw;
+  height: 150%;
+  margin-top: 4vw;
   padding: 0 20px;
 `;
 
 const StyledForm = styled.form`
-  width: 100%;
-  max-width: 700px;
+  width: 50%;
+  height:130%;
   padding: 40px;
   background-color: #eee;
   color: #3d5a80;
@@ -40,7 +40,7 @@ const StyledInput = styled.input`
 const StyledTextAreaSubject = styled.textarea`
   background-color: #98c1d9;
   width: 100%;
-  min-height: 60px;
+  min-height: 5%;
   resize: none;
   ${sharedStyles}
 `;
@@ -48,7 +48,7 @@ const StyledTextAreaSubject = styled.textarea`
 const StyledTextArea = styled.textarea`
   background-color: #98c1d9;
   width: 100%;
-  min-height: 100px;
+  min-height: 20%;
   resize: none;
   ${sharedStyles}
 `;
@@ -59,7 +59,7 @@ const StyledButton = styled.button`
   font-size: 0.9rem;
   border: 0;
   border-radius: 5px;
-  height: 40px;
+  height: 40%;
   padding: 0 20px;
   cursor: pointer;
   box-sizing: border-box;
@@ -78,8 +78,14 @@ const StyledError = styled.div`
 `;
 
 const ButtonSet = styled.div`
-  margin-top: 2vw;
-  vertical-align: middle;
+  background-color: #3d5a80;
+  color: white;
+  font-size:1.7em;
+  position: absolute;
+  border-radius:10px;
+  bottom: 5%;
+  width: 20%;
+  left:  40%;
   text-align: center;
   padding: 0 20px;
 `;
