@@ -5,6 +5,7 @@ import ContactForm from "./components/Contact";
 import Home from "./components/Home";
 import PostDetail from "./components/PostDetail";
 import Blog from "./components/Blog";
+import Donate from "./components/Donate";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route component={ContactForm} path="/contact" />
         <Route component={PostDetail} path="/blog/:slug" />
         <Route component={Blog} path="/blog" />
+        <Route component={Donate} path="/donate" />
         <Route component={Home} path="/" />
       </Switch>
     </BrowserRouter>
