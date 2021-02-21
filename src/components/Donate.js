@@ -43,7 +43,7 @@ class Donate extends Component {
               <div className="text2">Gofundme widget here</div>
             </div>
             </div>
-            <img className="landing-robot" src={bot2}> 
+            <img className="donateRobot" src={bot2}> 
               
               </img>
             </>
