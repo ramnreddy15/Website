@@ -23,8 +23,8 @@ class Donate extends Component {
             <GlobalStyle />
               {/* <div className="content-box"> hjalsdklANSDFKJASNDF</div> */}
             <div className="centered"> 
-            <p>
-              <h1>Donate Today</h1>
+            <div className="textArea">
+              <div className="text1">Donate Today</div>
               <span><br></br></span>
               <span><br></br></span>
               <span><br></br></span>
@@ -34,14 +34,14 @@ class Donate extends Component {
               <span><br></br></span>
               <span><br></br></span>
               <span><br></br></span>
-              <h2>Paypal widget here</h2>
+              <div className="text2">Paypal widget here</div>
               <span><br></br></span>
               <span><br></br></span>
               <span><br></br></span>
               <span><br></br></span>
               <span><br></br></span>
-              <h2>Gofundme widget here</h2>
-            </p>
+              <div className="text2">Gofundme widget here</div>
+            </div>
             </div>
             <img className="landing-robot" src={bot2}> 
               
