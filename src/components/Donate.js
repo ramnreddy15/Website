@@ -3,6 +3,8 @@ import {createGlobalStyle} from 'styled-components';
 import bot2 from "./assets/img/bot2.png";
 import './assets/Donate.scss'
 
+// If you need anything for this ask Ram Reddy
+
 const GlobalStyle = createGlobalStyle`
   html {
     height: 100%

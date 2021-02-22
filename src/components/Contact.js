@@ -5,6 +5,8 @@ import {Spring} from 'react-spring/renderprops'
 import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, StyledTextAreaSubject, ButtonSet} from "./assets/StyledContactForm.js";
 import './assets/contact.scss'
 
+// If you need anything for this ask Ram Reddy
+
 const GlobalStyle = createGlobalStyle`
   html {
     height: 100%
