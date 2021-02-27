@@ -7,6 +7,7 @@ import PostDetail from "./components/PostDetail";
 import Blog from "./components/Blog";
 import Donate from "./components/Donate";
 import Navbar from "./components/Navbar";
+import Sponsors from "./components/Sponsors";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         <Route component={PostDetail} path="/blog/:slug" />
         <Route component={Blog} path="/blog" />
         <Route component={Donate} path="/donate" />
+        <Route component={Sponsors} path="/sponsors" />
         <Route component={Home} path="/" />
+
       </Switch>
     </BrowserRouter>
   );
