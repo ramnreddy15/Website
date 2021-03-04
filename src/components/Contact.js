@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import emailjs from "emailjs-com";
 import {createGlobalStyle} from 'styled-components';
 import {Spring} from 'react-spring/renderprops'
-import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, StyledTextAreaSubject, ButtonSet} from "./assets/StyledContactForm.js";
-import './assets/contact.scss'
+import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, StyledTextAreaSubject, ButtonSet, Modal} from "./assets/StyledContactForm.js";
+import './assets/contact.scss';
 
 // If you need anything for this ask Ram Reddy.
 
@@ -24,12 +24,14 @@ class ContactForm extends Component {
   
   constructor(props) {
     super(props);
+
     this.state = {
       name: '',
       email: '',
       subject: '',
       message: '',
-      error:''
+      error:'',
+      show:false
     };
 
     this.handleNameChange = this.handleNameChange.bind(this);
@@ -38,7 +40,17 @@ class ContactForm extends Component {
     this.handleMessageChange = this.handleMessageChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.scrollDown = this.scrollDown.bind(this);
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
 
   handleNameChange(event) {
     this.setState({ 
@@ -76,20 +88,16 @@ class ContactForm extends Component {
     }
     this.setState({error: ``});
 
-    alert('You will get and email from us shortly!');
-    alert('These are the details you have submitted!');
-    alert(this.state.name);
-    alert(this.state.email);
-    alert(this.state.subject);
-    alert(this.state.message);
+    this.showModal()
+    // emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
+    //   .then((result) => {
+    //       console.log(result.text);
+    //   }, (error) => {
+    //       console.log(error.text);
+    //   });
+    //   event.target.reset();
 
-    emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      event.target.reset();
+
   }
 
   scrollDown(id) {
@@ -140,7 +148,15 @@ class ContactForm extends Component {
             <StyledButton type="submit">Send Message</StyledButton>
           </StyledForm>
         </StyledFormWrapper>
-
+        <Modal show={this.state.show} handleClose={this.hideModal}>
+          <h1>We have recieved your message!</h1>
+          <h2>You will recieve an email from us shortly.</h2>
+          <h2>Below are the details you have submitted:</h2>
+          <h3>Name: {this.state.name}</h3>
+          <h3>Email: {this.state.email}</h3>
+          <p>Subject: {this.state.subject}</p>
+          <p>Message: {this.state.message}</p>
+        </Modal>
       </body>
       <div className="buttonSet" id="goHere">
           <Spring
