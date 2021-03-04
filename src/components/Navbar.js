@@ -82,6 +82,12 @@ export default function Navbar(props) {
             Donate
           </NavLink>
         </li>
+        <li>
+          {" "}
+          <NavLink to="/events" activeClassName="active-link">
+            Events
+          </NavLink>
+        </li>
       </ul>
       <div className="burger" onClick={handleBurger}>
         <div className="line1"></div>

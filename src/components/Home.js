@@ -1,9 +1,7 @@
 import React from "react";
 import "./assets/Home.scss";
-import bot1 from "./assets/img/bot1.png";
-import bot2 from "./assets/img/bot2.png";
+import hero from "./assets/img/olympian_hero.png";
 
-const BOT_IMAGES = [bot1, bot2];
 
 export default function Home(props) {
   return (
@@ -14,12 +12,12 @@ export default function Home(props) {
       </div>
       <div className="landing-subheader">
         <p>
-        Moving into the future, one step at a time 
+        The first high school team to build a full-size bipedal humanoid robot.
         </p>
       </div>
       <img
         className="landing-robot"
-        src={BOT_IMAGES[1]}
+        src={hero}
         alt=""
       />    
       

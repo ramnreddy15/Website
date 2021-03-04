@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 $mobile: 768px;
 $tablet: 1024px;
@@ -29,7 +29,7 @@ $tablet: 1024px;
 
 .hero {
   pointer-events: none;
-  height: 86vh;
+  // height: 86vh;
 }
 
 .landing-header {
@@ -39,24 +39,27 @@ $tablet: 1024px;
   margin-left: 0.4em;
 
   #potentia {
-    margin-top: 0.4em;
+    padding-left: 0.4em;
+    z-index: 999 !important;
+    position: relative;
   }
 
   #robotics {
     position: relative;
-    padding-left: 0.4em;
+    top: -0.3em;
+    padding-left: 0.8em;
     z-index: 999 !important;
   }
 }
 
 .landing-robot {
   position: absolute;
-  z-index: 1;
-  opacity: 0;
-  left: 40vw;
+  opacity: 1;
+  // left: 40vw;
   overflow: hidden;
-  animation: navLinkFade 0.5s ease forwards 0.5s;
-  max-height: 87vh;
+  // animation: navLinkFade 0.5s ease forwards 0.5s;
+  // max-height: 87vh;
+  width: 100%;
 }
 
 @keyframes robotFlyIn {
@@ -73,19 +76,21 @@ $tablet: 1024px;
 
 .landing-subheader {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5vw;
+  font-size: 3vw;
   position: absolute;
-  margin-top: 30vh;
-  margin-right: 10%;
-  right: 0;
-  width: 20%;
+  margin-top: 60vh;
+  // margin-right: 10%;
+  // right: 0;
+  margin-left: 3em;
+  z-index: 999 !important;
+  width: 60%;
 
   @include tablet {
-    display: none;
+    margin-top: 40vh;
   }
 
   @include mobile {
-    display: none;
+    margin-top: 25vh;
   }
 
   a {
