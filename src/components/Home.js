@@ -8,12 +8,12 @@ export default function Home(props) {
     <body>
       <section className="hero">
       <div className="landing-header">
-        <h1 id="potentia">Potentia</h1>
-        <h1 id="robotics">Robotics</h1>
+        <h1 id="potentia"><span className="highlight-gray">&nbsp;Potentia&nbsp;</span></h1>
+        <h1 id="robotics"><span className="highlight-gray">&nbsp;Robotics&nbsp;</span></h1>
       </div>
       <div className="landing-subheader">
         <p>
-        The first high school team to design and build a full-size bipedal humanoid robot.
+        <span className="highlight-gray">&nbsp;The first high school team to design and&nbsp;<br></br>&nbsp;build a full-size bipedal humanoid robot.&nbsp;</span>
         </p>
       </div>
       <img

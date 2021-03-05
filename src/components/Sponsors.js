@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: #293241;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins, sans-serif;
     height: 100%;
     margin: 0;
     color: #555;
@@ -25,27 +25,23 @@ class Sponsors extends Component {
     return (
       <>
       <GlobalStyle/>
-      <div>
-        <span><br></br></span>
-        <span><br></br></span>
-        <h3 style={{color: '#fff', textAlign: 'center'}}>The Humanoid Robotics Club could not have happened without the support of these amazing sponsors!</h3>
-        <span><br></br></span>
-        <span><br></br></span>
-        <Container fluid>
-          <Row className = "show-container">
-            <Col md = {4}>
-              <h1 style={{color: '#FFD753'}} class = 'glow'><b>Gold</b></h1>
-              <h2 style={{textAlign: 'center'}}>Sponsors</h2>
+      <div className="intro-wrapper">
+        <h3 className="sponsor-intro" style={{color: '#fff', textAlign: 'center'}}>Our amazing sponsors help make Potentia Robotics' projects possible! <br></br> Contact us to learn more about sponsorship.</h3>
+        <Container fluid className="sponsor-tier-list">
+          <Col className="show-container">
+            <Col md={4}>
+              <h1 style={{color: '#FFD753'}} className='glow'><b>Gold</b></h1>
+              <h2 style={{textAlign: 'center'}} className="tier-detail">Donation amount: $1000+<br></br>Perks: Silver + logo on Olympian</h2>
             </Col>
-            <Col md = {4}>
-              <h1 style={{color: '#C8C3C3'}} class = 'glow'><b>Silver</b></h1>
-              <h2 style={{textAlign: 'center'}}>Sponsors</h2>
+            <Col md={4}>
+              <h1 style={{color: '#C8C3C3'}} className='glow'><b>Silver</b></h1>
+              <h2 style={{textAlign: 'center'}} className="tier-detail">Donation amount: $500-$999<br></br>Perks: Bronze + logo on all Potentia merchandise</h2>
             </Col>
-            <Col md = {4}>
-              <h1 style={{color: '#E2964E'}} class = 'glow'><b>Bronze</b></h1>
-              <h2 style={{textAlign: 'center'}}>Sponsors</h2>
+            <Col md={4}>
+              <h1 style={{color: '#E2964E'}} className='glow'><b>Bronze</b></h1>
+              <h2 style={{textAlign: 'center'}} className="tier-detail">Donation amount: $100-$499<br></br>Perks: logo on website + recognition on social media</h2>
             </Col>
-          </Row>
+          </Col>
         </Container>
       </div>
       </>

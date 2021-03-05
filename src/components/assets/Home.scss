@@ -51,7 +51,7 @@ $desktop-small: 1250px;
   font-family: "Poppins", sans-serif;
   font-size: 4vw;
   margin-left: 0.4em;
-  padding-top: 0.2em;
+  padding-top: 0.3em;
 
   #potentia {
     padding-left: 0.4em;
@@ -62,7 +62,7 @@ $desktop-small: 1250px;
   #robotics {
     position: relative;
     top: -0.3em;
-    padding-left: 1em;
+    padding-left: 1.35em;
     z-index: 999 !important;
   }
 }
@@ -87,6 +87,10 @@ $desktop-small: 1250px;
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.highlight-gray {
+  background-color: rgb(235, 235, 235);
 }
 
 .landing-subheader {
