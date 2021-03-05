@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
+$mobile-small: 575px;
 $mobile: 768px;
 $tablet: 1024px;
+$desktop-small: 1250px;
+
+@mixin mobile-small {
+  @media (max-width: $mobile-small) {
+    @content;
+  }
+}
 
 @mixin mobile {
-  @media (max-width: $mobile) {
+  @media (min-width: $mobile-small) and (max-width: $mobile) {
     @content;
   }
 }
@@ -15,8 +23,14 @@ $tablet: 1024px;
   }
 }
 
+@mixin desktop-small {
+  @media (min-width: $tablet) and (max-width: $desktop-small) {
+    @content;
+  }
+}
+
 @mixin desktop {
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop-small) {
     @content;
   }
 }
@@ -35,8 +49,9 @@ $tablet: 1024px;
 .landing-header {
   position: absolute;
   font-family: "Poppins", sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
   margin-left: 0.4em;
+  padding-top: 0.2em;
 
   #potentia {
     padding-left: 0.4em;
@@ -47,7 +62,7 @@ $tablet: 1024px;
   #robotics {
     position: relative;
     top: -0.3em;
-    padding-left: 0.8em;
+    padding-left: 1em;
     z-index: 999 !important;
   }
 }
@@ -76,21 +91,29 @@ $tablet: 1024px;
 
 .landing-subheader {
   font-family: "Poppins", sans-serif;
-  font-size: 3vw;
+  font-size: 2vw;
   position: absolute;
-  margin-top: 60vh;
+  margin-top: 55vh;
   // margin-right: 10%;
   // right: 0;
-  margin-left: 3em;
+  margin-left: 4em;
   z-index: 999 !important;
-  width: 60%;
+  width: 45%;
+
+  @include desktop-small {
+    margin-top: 40vh;
+  }
 
   @include tablet {
-    margin-top: 40vh;
+    margin-top: 33vh;
   }
 
   @include mobile {
     margin-top: 25vh;
+  }
+
+  @include mobile-small {
+    margin-top: 17vh;
   }
 
   a {
@@ -101,4 +124,29 @@ $tablet: 1024px;
       text-decoration: underline;
     }
   }
+}
+
+.intro-wrapper {
+  // position: relative;
+  justify-content: center;
+
+
+}
+
+.intro-section {
+  position: absolute;
+  top: 50vw;
+  min-height: 50vh;
+  min-width: 100%;
+  background: rgb(235, 235, 235);
+}
+
+.intro-content {
+  background: rgb(235, 235, 235);
+  float: left;
+}
+
+.mission-statement {
+  background: rgb(235, 235, 235);
+  float: right;
 }
