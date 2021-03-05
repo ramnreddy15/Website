@@ -26,6 +26,9 @@ const StyledForm = styled.form`
   color: #3d5a80;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(250, 250, 250, 0.4);
+  @media only screen and (max-width: 800px) {
+    width: 90%
+  }
 `;
 //  height:100%;
   // border-radius: 10px; (if we want a round form)
@@ -97,46 +100,113 @@ const Background = styled.div`
 `;
 
 const ModalWrapper = styled.div`
-  justify-content: center;
-  align-items: center;
   overflow: auto;
   width: 40%;
   height: 60%;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
-  position: relative;
   z-index: 10;
   border-radius: 10px;
-`;
-
-const ModalContent = styled.div`
-  display: flex;
-  flex-direction: column;
+  padding: 0.5rem;
+  background: linear-gradient(to right, #ee6c4d, #3d5a80, #293241);    
+  position:relative;
   justify-content: center;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 800px) {
+    top: -29%;
+    width: 60%;
+    height: 40%;
+    left: -16.7%;
+    h1 {
+      font-size: 2.3rem;
+      padding: 1%;
+    }
+    h2 {
+      font-size: 1.5rem;
+      padding: 2%;
+    }
+    h3 {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    top: -24%;
+    width: 60%;
+    height: 45%;
+    left: -16.7%;
+    h1 {
+      font-size: 1.10rem;
+      padding: 5%;
+    }
+    h2 {
+      font-size: 0.9rem;
+      padding: 2%;
+    }
+    h3 {
+      font-size: 0.9rem;
+      width: 100%;
+    }
+  }
+`;
+const ModalContent = styled.div`
   align-items: center;
   line-height: 1.8;
   color: #141414;
+  background: #222;
+  height: 100%;
+  width:100%;
+  color: #f2e9e4;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+  h1 {
+    margin-top: 5%;  
+    text-align:center;
+  }
+  h2 {
+    text-align:center;
+  }
   p {
+    border-style: double;
+    border-width: thin;
+    padding: 0.3em;
+    width: 80%;
     margin-bottom: 1rem;
+    max-height:100px;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
   }
-  button {
-    padding: 1em 2em ;
-    background: #141414;
-    color: #fff;
-    border: none;
-  }
+  h3 {
+
+    border-style: double;
+    border-width: thin;
+    padding: 0.3em;  
+    margin: 2%;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  } 
+  overflow-y: scroll;
 `;
 
 const CloseModalButton = styled(MdClose)`
   cursor: pointer;
   position: absolute;
   top: 5%;
-  right: 2%;
+  right: 4%;
   width: 5%;
   height: 5%;
   padding: 0;
   z-index: 10;
+  color:white;
+  @media only screen and (max-width: 500px) {
+    top: 3%;
+  }
 `;
 
 const Modal = ({ handleClose, show, children }) => {

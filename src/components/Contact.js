@@ -88,16 +88,16 @@ class ContactForm extends Component {
     }
     this.setState({error: ``});
 
+
+    emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      event.target.reset();
+
     this.showModal()
-    // emailjs.sendForm('service_5ggwj8d', 'template_jirc6zm', event.target, 'user_XtSzEFFNtc4C6IEpGN9JS')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
-    //   event.target.reset();
-
-
   }
 
   scrollDown(id) {
