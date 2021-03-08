@@ -1,8 +1,8 @@
 import React from "react";
-import "./assets/Blog.scss";
+import "./assets/Olympian.scss";
 import hero from "./assets/img/olympian_hero.png";
 
-export default function Blog(props) {
+export default function Events(props) {
   return (
     <body>
       <section className="hero">

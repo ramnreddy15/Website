@@ -35,6 +35,10 @@ $desktop-small: 1250px;
   }
 }
 
+// .test {
+//   position: relative;
+// }
+
 * {
   padding: 0;
   margin: 0;
@@ -43,6 +47,7 @@ $desktop-small: 1250px;
 
 .hero {
   pointer-events: none;
+  // position:relative
   // height: 86vh;
 }
 
@@ -103,6 +108,8 @@ $desktop-small: 1250px;
   margin-left: 4em;
   z-index: 999 !important;
   width: 45%;
+
+
 
   @include desktop-small {
     margin-top: 40vh;

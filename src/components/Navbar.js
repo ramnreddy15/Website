@@ -48,13 +48,7 @@ export default function Navbar(props) {
         </li>
         <li>
           {" "}
-          <NavLink to="/timeline" activeClassName="active-link">
-            Timeline
-          </NavLink>
-        </li>
-        <li>
-          {" "}
-          <NavLink to="/olympian" activeClassName="active-link">
+          <NavLink to="/meet-olympian" activeClassName="active-link">
             Meet Olympian
           </NavLink>
         </li>

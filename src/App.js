@@ -4,6 +4,7 @@ import About from "./components/About";
 import ContactForm from "./components/Contact";
 import Home from "./components/Home";
 import PostDetail from "./components/PostDetail";
+import Olympian from "./components/Olympian";
 import Blog from "./components/Blog";
 import Donate from "./components/Donate";
 import Navbar from "./components/Navbar";
@@ -21,8 +22,9 @@ function App() {
         <Route component={Blog} path="/blog" />
         <Route component={Donate} path="/donate" />
         <Route component={Sponsors} path="/sponsors" />
-	<Route component={Events} path="/events" />
-	<Route component={Home} path="/" />
+        <Route component={Events} path="/events" />
+        <Route component={Olympian} path="/meet-olympian" />
+        <Route component={Home} path="/" />
 
       </Switch>
     </BrowserRouter>

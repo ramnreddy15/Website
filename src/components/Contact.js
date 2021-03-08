@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import {createGlobalStyle} from 'styled-components';
 import {Spring} from 'react-spring/renderprops'
 import {StyledFormWrapper, StyledForm, StyledButton, StyledError, StyledInput, StyledTextArea, StyledTextAreaSubject, ButtonSet, Modal} from "./assets/StyledContactForm.js";
-import './assets/contact.scss';
+import './assets/Contact.scss';
 
 // If you need anything for this ask Ram Reddy.
 
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: #293241;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins, sans-serif;
     height: 100%;
     margin: 0;
     color: #555;
@@ -118,7 +118,7 @@ class ContactForm extends Component {
         <GlobalStyle />
         <StyledFormWrapper id="backUp">
           <StyledForm onSubmit={this.handleSubmit}>
-            <h2>Contact Form</h2>
+            <h2 className="header">Contact Us</h2>
             <label htmlFor="name">Name</label>
             <StyledInput
               type="text"
@@ -145,7 +145,9 @@ class ContactForm extends Component {
               <p>{this.state.error}</p>
             </StyledError>
             
-            <StyledButton type="submit">Send Message</StyledButton>
+            <div className="button-container">
+              <StyledButton type="submit" className="button-submit">Send Message</StyledButton>
+            </div>
           </StyledForm>
         </StyledFormWrapper>
         <Modal show={this.state.show} handleClose={this.hideModal}>
@@ -174,6 +176,9 @@ class ContactForm extends Component {
               </div>
             )}
           </Spring>
+        </div>
+        <div className="bottom">
+
         </div>
       </>
   );

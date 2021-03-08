@@ -1,9 +1,26 @@
 $small: 500px;
 $medium: 800px;
+$large: 1200px;
 
 button {
     cursor:pointer;
 }
+
+.button-submit {
+  font-family: Poppins, sans-serif;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+.button-container {
+  justify-content: center;
+}
+
+.header {
+  font-size: 2.5em;
+  padding-bottom: 1vw;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -42,12 +59,17 @@ body {
   border-radius:10px;
   width: 20%;
   left:  40%;
+  margin-bottom: 5vw;
   text-align: center;
   padding: 0 2%;
   position:relative;
   top:2em;
+  @media only screen and (max-width: $large) {
+    width: 35%;
+    left: 35%;
+  }
   @media only screen and (max-width: $medium) {
-    width: 30%;
+    width: 45%;
     left: 35%;
   }
   @media only screen and (max-width: $small) {
@@ -96,3 +118,8 @@ body {
   .fa-envelope {
     color: #e0fbfc;
   }
+
+
+.bottom {
+  height: 0.5vw;
+}
