@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import './contact.scss';
+import './Contact.scss';
 import { MdClose } from 'react-icons/md';
 
 const sharedStyles = css`
