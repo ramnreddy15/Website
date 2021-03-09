@@ -129,28 +129,3 @@ $desktop-small: 1250px;
     }
   }
 }
-
-.intro-wrapper {
-  // position: relative;
-  justify-content: center;
-
-
-}
-
-.intro-section {
-  position: absolute;
-  top: 50vw;
-  min-height: 50vh;
-  min-width: 100%;
-  background: rgb(235, 235, 235);
-}
-
-.intro-content {
-  background: rgb(235, 235, 235);
-  float: left;
-}
-
-.mission-statement {
-  background: rgb(235, 235, 235);
-  float: right;
-}

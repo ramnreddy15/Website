@@ -25,7 +25,7 @@ class Sponsors extends Component {
     return (
       <>
       <GlobalStyle/>
-      <div className="intro-wrapper">
+      <div className="sponsor-intro-wrapper">
         <h3 className="sponsor-intro" style={{color: '#fff', textAlign: 'center'}}>Our amazing sponsors help make Potentia Robotics' projects possible! <br></br> Contact us to learn more about sponsorship.</h3>
         <Container fluid className="sponsor-tier-list">
           <Col className="show-container">

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 
-$mobile-small: 575px;
+$mobile-small: 530px;
 $mobile: 768px;
 $tablet: 1024px;
 $desktop-small: 1250px;
@@ -34,10 +35,11 @@ $desktop-small: 1250px;
     @content;
   }
 }
-
-// .test {
-//   position: relative;
-// }
+.main-content {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+}
 
 * {
   padding: 0;
@@ -47,8 +49,27 @@ $desktop-small: 1250px;
 
 .hero {
   pointer-events: none;
-  // position:relative
-  // height: 86vh;
+  position: relative;
+
+  @include mobile-small {
+    min-height: 41.5vw;
+  }
+
+  @include mobile {
+    min-height: 44vw;
+  }
+
+  @include tablet {
+    min-height: 45vw;
+  }
+
+  @include desktop-small {
+    min-height: 46vw;
+  }
+
+  @include desktop {
+    min-height: 47.5vw;
+  }
 }
 
 .landing-header {
@@ -109,8 +130,6 @@ $desktop-small: 1250px;
   z-index: 999 !important;
   width: 45%;
 
-
-
   @include desktop-small {
     margin-top: 40vh;
   }
@@ -138,26 +157,61 @@ $desktop-small: 1250px;
 }
 
 .intro-wrapper {
-  // position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  font-family: Inter, sans-serif;
+  margin-top: 3em;
+  // border-style: solid;
 
-
-}
-
-.intro-section {
-  position: absolute;
-  top: 50vw;
-  min-height: 50vh;
-  min-width: 100%;
-  background: rgb(235, 235, 235);
+  // background: rgb(235, 235, 235);
 }
 
 .intro-content {
-  background: rgb(235, 235, 235);
-  float: left;
+  margin: 0 auto;
+  width: 47%;
+  margin-left: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  background: rgb(243, 243, 243);
+
 }
 
 .mission-statement {
-  background: rgb(235, 235, 235);
-  float: right;
+  margin: 0 auto;
+  width: 47%;
+  margin-right: 2vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  background: rgb(233, 247, 253);
+
 }
+
+.intro-space {
+  background: white;
+}
+
+.intro-header {
+  // margin-left: 10vw;
+  text-align: center;
+  font-size: 2.6vw;
+  padding-bottom: 1vw;
+  font-family: Poppins, sans-serif;
+}
+
+.intro-text {
+  font-size: 1.3vw;
+  line-height: 1.75em;
+}
+
+.text-blue {
+  color: #009dff;
+}
+
