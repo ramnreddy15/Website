@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {createGlobalStyle} from 'styled-components';
 import {Container, Row, Col} from "react-bootstrap"
+import {Spring} from 'react-spring/renderprops'
 
 import './assets/Sponsors.scss'
 
@@ -44,6 +45,26 @@ class Sponsors extends Component {
           </Col>
         </Container>
       </div>
+      <div className="buttonSet" id="goHere">
+          <Spring
+          from= {{ opacity: 0 }}
+          to={{opacity: 1}}
+          config = {{delay: 1000}}
+          >
+            { props=> (
+              <div style={props}>
+                <a href="https://www.linkedin.com/in/potentia-robotics-790582204/" target="_blank" rel="noopener noreferrer" className="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCKzWtwtWSejKt9THR_XlU7Q" target="_blank" rel="noopener noreferrer" className="fa fa-youtube"></a>
+                <a href="https://github.com/PotentiaRobotics" target="_blank" rel="noopener noreferrer" className="fa fa-github"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/potentiarobotics/" target="_blank" rel="noopener noreferrer" className="fa fa-facebook"></a>
+              </div>
+            )}
+          </Spring>
+        </div>
+        <div className="bottom">
+
+        </div>
       </>
       );
   }

@@ -41,8 +41,9 @@ $desktop-small: 1250px;
   box-sizing: border-box;
 }
 
-.hero {
+.hero-temp {
   pointer-events: none;
+  overflow: hidden;
   // height: 86vh;
 }
 

@@ -5,7 +5,7 @@ import hero from "./assets/img/olympian_hero.png";
 export default function Blog(props) {
   return (
     <body>
-      <section className="hero">
+      <section className="hero-temp">
       <div className="landing-header">
         <h1 id="potentia"><span className="highlight-gray">&nbsp;Potentia&nbsp;</span></h1>
         <h1 id="robotics"><span className="highlight-gray">&nbsp;Robotics&nbsp;</span></h1>

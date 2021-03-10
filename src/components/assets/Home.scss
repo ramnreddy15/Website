@@ -215,3 +215,60 @@ $desktop-small: 1250px;
   color: #009dff;
 }
 
+.picture-redirect-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  font-family: Inter, sans-serif;
+  // border-style: solid;
+
+  // background: rgb(235, 235, 235);
+}
+
+.about-us-content {
+  margin: 0 auto;
+  width: 47%;
+  margin-left: 2vw;
+  // padding-left: 2vw;
+  // padding-right: 2vw;
+  // padding-top: 1vw;
+  padding-bottom: 1vw;
+  background: rgb(233, 253, 235);
+}
+
+.about-us-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+}
+
+.about-us-link {
+  text-decoration: none;
+  color: #009dff;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4vw;
+}
+
+.about-us-link:hover {
+  text-decoration: none;
+  color: #048fe6;
+}
+
+.meet-olympian-content {
+  margin: 0 auto;
+  width: 47%;
+  margin-right: 2vw;
+  padding-bottom: 1vw;
+  background: rgb(255, 237, 248);
+}
+
+.team-picture {
+  max-width: 100%;
+}
+
+.olympian-waving {
+  max-width: 100%;
+}

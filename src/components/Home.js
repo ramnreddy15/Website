@@ -1,7 +1,13 @@
 import React from "react";
 import "./assets/Home.scss";
 import hero from "./assets/img/olympian_hero.png";
+import team_picture from "./assets/img/team_picture.png";
+import olympian_waving from "./assets/img/olympian_waving.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import {Spring} from 'react-spring/renderprops'
 
+const element = <FontAwesomeIcon icon={faArrowCircleRight} />
 
 export default function Home(props) {
   return (
@@ -39,6 +45,50 @@ export default function Home(props) {
           </p>
         </div>
       </section>
+      <section className="picture-redirect-wrapper">
+        <div className="about-us-content">
+          <a href="/about">
+          <img
+            className="team-picture"
+            src={team_picture}
+            alt=""
+          />  
+          </a> 
+          <div className="about-us-link-wrapper">
+            <a href="/about" className="about-us-link"><strong>Meet the Team</strong>&nbsp;<FontAwesomeIcon icon={faArrowCircleRight}/></a>
+          </div>
+        </div>
+        <div className="intro-space"></div>
+        <div className="meet-olympian-content">
+        <a href="/about">
+          <img
+            className="olympian-waving"
+            src={olympian_waving}
+            alt=""
+          />  
+          </a> 
+          <div className="about-us-link-wrapper">
+            <a href="/meet-olympian" className="about-us-link"><strong>Meet Olympian</strong>&nbsp;<FontAwesomeIcon icon={faArrowCircleRight}/></a>
+          </div>
+        </div>
+      </section>
+      <div className="buttonSet" id="goHere">
+          <Spring
+          from= {{ opacity: 0 }}
+          to={{opacity: 1}}
+          config = {{delay: 1000}}
+          >
+            { props=> (
+              <div style={props}>
+                <a href="https://www.linkedin.com/in/potentia-robotics-790582204/" target="_blank" rel="noopener noreferrer" className="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCKzWtwtWSejKt9THR_XlU7Q" target="_blank" rel="noopener noreferrer" className="fa fa-youtube"></a>
+                <a href="https://github.com/PotentiaRobotics" target="_blank" rel="noopener noreferrer" className="fa fa-github"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/potentiarobotics/" target="_blank" rel="noopener noreferrer" className="fa fa-facebook"></a>
+              </div>
+            )}
+          </Spring>
+        </div>
     </body>
   );
 }

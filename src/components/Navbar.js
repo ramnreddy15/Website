@@ -70,12 +70,12 @@ export default function Navbar(props) {
             Contact Us
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           {" "}
           <NavLink to="/donate" activeClassName="active-link">
             Donate
           </NavLink>
-        </li>
+        </li> */}
         <li>
           {" "}
           <NavLink to="/events" activeClassName="active-link">

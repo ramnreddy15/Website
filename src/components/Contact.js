@@ -114,7 +114,7 @@ class ContactForm extends Component {
 
     return (
       <>
-      <body>
+      <body className="contact-main">
         <GlobalStyle />
         <StyledFormWrapper id="backUp">
           <StyledForm onSubmit={this.handleSubmit}>
