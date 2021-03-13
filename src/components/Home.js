@@ -60,7 +60,7 @@ export default function Home(props) {
         </div>
         <div className="intro-space"></div>
         <div className="meet-olympian-content">
-        <a href="/about">
+        <a href="/meet-olympian">
           <img
             className="olympian-waving"
             src={olympian_waving}
