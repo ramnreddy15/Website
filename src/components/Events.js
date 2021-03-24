@@ -8,6 +8,8 @@ import icon from "./assets/img/0002.jpg";
 import icon2 from "./assets/img/0001.jpg";
 import icon3 from "./assets/img/0003.jpg";
 import pdf from "./assets/Python_BootCamp.pdf";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 
 class Events extends Component {
@@ -15,14 +17,20 @@ class Events extends Component {
       return(
           <>
           <br></br>
-          <div style={{marginLeft: '35%'}}>
-            <img src = {icon2} width="50%" height="100%" alt="image of team member"></img>
+          <div className="flyer-container">
+            <img src = {icon2} width="30%" height="100%" alt="image of team member"></img>
           </div>
+          <div className="pdf-link-container">
           
-          <div style={{marginLeft: '45%'}}>
-            <a href={pdf} download>Click to Download Information</a>
+            <div className="pdf-link">
+              <a href={pdf} download className="pdf-download"><strong>Learn More</strong>&nbsp;<FontAwesomeIcon icon={faArrowCircleRight}/></a>  
+            </div>
+        
           </div>
-          
+
+          <div className="bottom">
+
+          </div>
           </>
       );
   }

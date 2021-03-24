@@ -40,12 +40,12 @@ export default function Navbar(props) {
             Home
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           {" "}
           <NavLink to="/about" activeClassName="active-link">
             About
           </NavLink>
-        </li>
+        </li> */}
         <li>
           {" "}
           <NavLink to="/meet-olympian" activeClassName="active-link">

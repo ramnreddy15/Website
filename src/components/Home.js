@@ -7,8 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import {Spring} from 'react-spring/renderprops'
 
-const element = <FontAwesomeIcon icon={faArrowCircleRight} />
-
 export default function Home(props) {
   return (
     <body className="main-content">
