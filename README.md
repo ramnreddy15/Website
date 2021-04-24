@@ -50,7 +50,7 @@ with
 ```
 "start": "serve -s build/"
 ``` 
-in the scripts section of package.json
+This is in the scripts section of package.json
 
 ## Available Scripts
 
