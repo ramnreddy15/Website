@@ -1,5 +1,5 @@
 # website
-
+ 
 Source for TJHRC's website built with Sanity and React.
 
 # Setup
@@ -21,6 +21,38 @@ After you've set up the project for the first time, simply run:
 yarn start
 ```
 And you should see the website load and show up in your browser, at the address https://http://localhost:3000/. 
+
+# Creating new branches
+Make sure to replace 
+```
+"start": "serve -s build/"
+```
+ with these four lines:     
+```
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"
+``` when creating a branch in the scripts section of package.json
+
+# Committing to branches
+When committing to a side branch make sure to uncomment everything below "Devlopment gitignore" and comment everything under the "Hosted gitignore" heading.
+
+# Committing to master
+When committing to a master branch make sure to uncomment everything below "Hosted gitignore" and comment everything under the "Devlopment gitignore" heading.
+
+Run ```yarn run build``` in the console
+
+Also replace 
+```
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"
+``` with 
+```
+"start": "serve -s build/"
+``` in the scripts section of package.json
 
 ## Available Scripts
 
