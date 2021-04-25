@@ -1,48 +1,41 @@
-### Hosted gitgnore
+# Code editors and IDE files
+.vscode/
+.idea/
+
+# WSL for Windows
+*Zone.Identifier
+
+# macOS
+.DS_Store
+
+# dependencies
 node_modules
-public
-src
-studio
+/.pnp
+.pnp.js
 
-#### Devlopment gitignore
-# # Code editors and IDE files
-# .vscode/
-# .idea/
+# testing
+coverage
 
-# # WSL for Windows
-# *Zone.Identifier
+# production
+build
+dist
 
-# # macOS
-# .DS_Store
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# # dependencies
-# node_modules
-# /.pnp
-# .pnp.js
+# sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
-# # testing
-# coverage
+# eslint
+.eslintcache
 
-# # production
-# build
-# dist
-
-# # misc
-# .DS_Store
-# .env.local
-# .env.development.local
-# .env.test.local
-# .env.production.local
-
-# # sass
-# .sass-cache/
-# *.css.map
-# *.sass.map
-# *.scss.map
-
-# # eslint
-# .eslintcache
-
-# npm-debug.log*
-# yarn-debug.log*
-# yarn-error.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

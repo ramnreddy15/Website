@@ -33,14 +33,9 @@ Make sure to replace
 "build": "react-scripts build",
 "test": "react-scripts test",
 "eject": "react-scripts eject"
-``` when creating a branch in the scripts section of package.json
-
-# Committing to branches
-When committing to a side branch make sure to uncomment everything below "Devlopment gitignore" and comment everything under the "Hosted gitignore" heading.
+``` when creating a branch. This in the scripts section of package.json
 
 # Committing to master
-When committing to a master branch make sure to uncomment everything below "Hosted gitignore" and comment everything under the "Devlopment gitignore" heading.
-
 Run ```yarn run build``` in the console
 
 Also replace 
