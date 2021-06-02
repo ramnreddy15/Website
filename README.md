@@ -33,7 +33,8 @@ Make sure to replace
 "build": "react-scripts build",
 "test": "react-scripts test",
 "eject": "react-scripts eject"
-``` when creating a branch. This in the scripts section of package.json
+``` 
+when creating a branch. This in the scripts section of package.json
 
 # Committing to master
 Run ```yarn run build``` in the console
@@ -44,10 +45,12 @@ Also replace
 "build": "react-scripts build",
 "test": "react-scripts test",
 "eject": "react-scripts eject"
-``` with 
+``` 
+with 
 ```
 "start": "serve -s build/"
-``` in the scripts section of package.json
+``` 
+This is in the scripts section of package.json
 
 ## Available Scripts
 
