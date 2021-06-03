@@ -16,14 +16,13 @@
     "bootstrap-icons": "^1.2.2",
     "emailjs-com": "^2.6.4",
     "jquery": "^3.5.1",
-    "node-sass": "4.14",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
+    "react-scripts": "^4.0.3",
     "serve": "^11.3.2",
     "styled-components": "^5.2.1",
     "tsutils": "^3.20.0",
@@ -31,7 +30,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "serve -s build/"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "node-sass": "^6.0.0",
     "react-spring": "^8.0.27"
   }
 }
