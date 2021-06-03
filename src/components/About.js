@@ -9,17 +9,30 @@ import ram from "./assets/img/Ram.PNG";
 import sai from "./assets/img/Sai.PNG";
 import kedar from "./assets/img/Kedar.PNG";
 import icon from "./assets/img/aboutlogo.PNG";
+
+import GroupPhoto from "./assets/img/team_picture.png";
+
 import './assets/About.scss';
 
 import './assets/About.scss';
  
+import {Container, Row, Col} from "react-bootstrap";
  
+
  
  
 class About extends Component {
     render() {
       return (
         <body>
+      
+      <h1 id = "title">About Us</h1>
+      <Container id = "container">
+        <Row>
+          <Col lg><img id = "teamimage" src = {GroupPhoto} alt = "Group Pic"></img></Col>
+          <Col lg><p>We are a team of people who do things. The things we do are important. The things we do relate to robotics. We are important. We are Potentia.</p></Col>
+        </Row>
+      </Container>
           
       <table>
         <tr>

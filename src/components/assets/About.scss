@@ -1,11 +1,13 @@
 table{
-background-color: aqua;
+
+    background-color: aqua;
 
 
-margin: auto;
-width: 800px;
+    margin: auto;
+    width: 800px;
 
 }
+
 th{
 font-size: 20px;
 border: 3px solid black;
@@ -19,4 +21,24 @@ td{
     font-size: 16px;
     border: 3px solid black;
     padding: 10px;
+}
+
+#teamimage{
+    width: 100%;
+}
+
+#title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#container{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#container.row{
+  
+    width: 100%;
 }
