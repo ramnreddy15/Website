@@ -44,16 +44,18 @@ class About extends Component {
       <Container fluid id = "container">
         <Row>
           <Col lg><img id = "teamimage" src = {GroupPhoto} alt = "Group Pic"></img></Col>
-          <Col lg><p>We are a team of people who do things. The things we do are important. The things we do relate to robotics. We are important. We are Potentia.</p></Col>
+          <Col lg><p id = "ourDescription">We are a team of people who do things. The things we do are important. The things we do relate to robotics. We are important. We are Potentia.</p></Col>
         </Row>
       </Container>
 
       <Tabs defaultActiveKey="team1" id="uncontrolled-tab-example">
         <Tab eventKey="team1" title="Programming Subteam">
           <Container fluid>
+          <h1 id = "subteamTitle">Programming Subteam Members</h1>  
             <Row>
               <Col lg>
                 <Container>
+                  
                   <Row>
 
                     <Col lg>
@@ -196,7 +198,7 @@ class About extends Component {
         
         <Tab eventKey="team2" title="Engineering Subteam">
           <Container fluid>
-            
+            <h1 id = "subteamTitle">Engineering Subteam Members</h1> 
             <Row>
               <Col lg>
                 <Container>
@@ -312,9 +314,9 @@ class About extends Component {
         </Tab>
         
         <Tab eventKey="team3" title="Outreach Subteam" >
-
+        
           <Container fluid >
-
+            <h1 id = "subteamTitle">Outreach Subteam Members</h1> 
             <Row>
               <Col lg>
                 <Container>
