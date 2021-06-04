@@ -20,7 +20,7 @@ export default function NavBar(props) {
 
   return (
     <Navbar collapseOnSelect expand="xl" variant="dark" id = "navbarmain"  onToggle = {expandHamborgor}>
-      <Navbar.Brand href="#home" id = "brandLogo">
+      <Navbar.Brand href="/" id = "brandLogo">
         <img
           src= {logo}
           width="20px"
