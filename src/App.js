@@ -7,7 +7,7 @@ import PostDetail from "./components/PostDetail";
 import Olympian from "./components/Olympian";
 import Blog from "./components/Blog";
 import Donate from "./components/Donate";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import Sponsors from "./components/Sponsors";
 import Events from "./components/Events";
 
