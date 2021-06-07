@@ -72,6 +72,8 @@ $desktop-small: 1250px;
   }
 }
 
+
+
 .landing-header {
   position: absolute;
   font-family: "Poppins", sans-serif;
@@ -83,7 +85,18 @@ $desktop-small: 1250px;
     padding-left: 0.4em;
     z-index: 999 !important;
     position: relative;
+    
   }
+
+  #potentiaspan{
+    font-size: 5vw;
+  }
+
+  #roboticsspan{
+    font-size: 5vw;
+  }
+
+
 
   #robotics {
     position: relative;
@@ -129,6 +142,11 @@ $desktop-small: 1250px;
   margin-left: 4em;
   z-index: 999 !important;
   width: 45%;
+
+  #maintextspan{
+    font-size: 2vw;
+  
+  }
 
   @include desktop-small {
     margin-top: 40vh;

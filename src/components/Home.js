@@ -12,12 +12,12 @@ export default function Home(props) {
     <body className="main-content">
       <section className="hero">
         <div className="landing-header">
-          <h1 id="potentia"><span className="highlight-gray">&nbsp;Potentia&nbsp;</span></h1>
-          <h1 id="robotics"><span className="highlight-gray">&nbsp;Robotics&nbsp;</span></h1>
+          <h1 id="potentia"><span id = "potentiaspan" className="highlight-gray">&nbsp;Potentia&nbsp;</span></h1>
+          <h1 id="robotics"><span id = "roboticsspan"className="highlight-gray">&nbsp;Robotics&nbsp;</span></h1>
         </div>
         <div className="landing-subheader">
-          <p>
-          <span className="highlight-gray">&nbsp;The first high school team to design and&nbsp;<br></br>&nbsp;build a full-size bipedal humanoid robot.&nbsp;</span>
+          <p id = "maintextspan">
+          <span id = "maintextspan" className="highlight-gray"  >&nbsp;The first high school team to design and&nbsp;<br></br>&nbsp;build a full-size bipedal humanoid robot.&nbsp;</span>
           </p>
         </div>
         <img
