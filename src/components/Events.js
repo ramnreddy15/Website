@@ -18,7 +18,7 @@ class Events extends Component {
           <>
           <br></br>
           <div className="flyer-container">
-            <img src = {icon2} width="30%" height="100%" alt="image of team member"></img>
+            <img src = {icon2}  alt="image of bootcamp"></img>
           </div>
           <div className="pdf-link-container">
           
