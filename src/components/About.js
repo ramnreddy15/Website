@@ -17,7 +17,9 @@ import './assets/About.scss';
 
 import './assets/About.scss';
  
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Container } from 'reactstrap';
+import { Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Container,} from 'reactstrap';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 // import {Tabs, Tab} from 'react-bootstrap-tabs';
 
 
@@ -36,43 +38,394 @@ var mayukaBio = "Hi! I’m Mayuka, and I’m an Engineer at Potentia Robotics. I
 var saiBio = "Hey! My name is Sai. I am a part of the Outreach and Finance team with my role centering around spearheading networking with sponsors, organizing financial accounts, as well as working with Jason and Ajit to formulate innovative methods of fundraising that not only help towards the development of our robot Olympian but also help spark a love of STEM in the community. I joined Potentia to help pave the path for other high schoolers and show them that the limitations placed upon us are not rigid but with a dose of determination and collaboration, malleable."
 var ajitBio = "My name is Ajit Sivakumar and I am part of the Outreach and Finance team. I really enjoy working with the other members of the outreach team to create a solid foundation for our project. I wanted to join Potentia to gain experience working with money and people and I am also genuinely interested in the creation of a humanoid robot. I hope to learn more not only in my sub-section, but in all aspects of our project!"
 
+
+
 class About extends Component {
+  
     render() {
+      
       return (
         <body>
       
       <h1 id = "title">About Us</h1>
       <Container fluid id = "container">
         <Row>
-          <Col lg><div style={{"max-width": "50%"}}><img id="teamimage" src={GroupPhoto} alt="Group Pic"/></div></Col>
-            
-            
-          <Col lg><p id = "ourDescription">Potentia Robotics Roster</p></Col>
+          <Col sm={{ size: 6, order: 2, offset: 1 }}><img id = "teamimage" src = {GroupPhoto} alt = "Group Pic"></img></Col>
+          <Col sm={{ size: 6, order: 2, offset: 1 }}><p id = "ourDescription">We are a team of people who do things. The things we do are important. The things we do relate to robotics. We are important. We are Potentia.</p></Col>
         </Row>
       </Container>
 
+      <Tabs>
+        <TabList>
+          <Tab>Programming Subteam</Tab>
+          <Tab>Engineering Subteam</Tab>
+          <Tab>Outreach Subteam</Tab>
+        </TabList>
 
-      <Tabs defaultActiveKey="team1" id="uncontrolled-tab-example">
-        <Tab eventKey="team1" title="Programming Subteam">
-          <Container fluid>
+        <TabPanel>
+        <Container fluid>
           <h1 id = "subteamTitle">Programming Subteam Members</h1>  
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+               
                   
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Aditya Vasantharao</h1>
                       <h5>Project Lead</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {adi} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+            
+                
+                
+              </Col>
+
+              <Col sm={{ size: 6, order: 0, offset: 0 }}>
+                <p>{adiBio}</p>
+              </Col>
+
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+
+                {/* <Container> */}
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Audhav Durai</h1>
+                      <h5>Programming Lead</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {icon} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                {/* </Container> */}
+                
+              </Col>
+              <Col>
+                <p>{audhavBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Eugene</h1>
+                      <h5>Control Systems Lead</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {icon} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{eugeneBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+               
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Kedar Prasad</h1>
+                      <h5>Software Developer</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {kedar} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{kedarBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Ram Reddy</h1>
+                      <h5>Software Developer</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {ram} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{fakeRamBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Ramya Reddy</h1>
+                      <h5>Software Developer</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {icon} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{ramyaBio}</p>
+              </Col>
+            </Row>
+
+            
+
+            </Container>
+        </TabPanel>
+        
+        <TabPanel>
+        <Container fluid>
+            <h1 id = "subteamTitle">Engineering Subteam Members</h1> 
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Shahzad Sohail</h1>
+                      <h5>Engineering Lead</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {shahzad} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{ShahzadBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+               
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Rushil Umaretiya</h1>
+                      <h5>Engineer</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {rushil} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{rushilBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Varsha</h1>
+                      <h5>Engineer</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {icon} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{varshaBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Aileen</h1>
+                      <h5>Engineer</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {aileen} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{aileenBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Mayuka Valluri</h1>
+                      <h5>Engineer</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {mayuka} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{mayukaBio}</p>
+              </Col>
+            </Row>
+           
+                       
+            </Container>
+        </TabPanel>
+
+        <TabPanel>
+        <Container fluid >
+            <h1 id = "subteamTitle">Outreach Subteam Members</h1> 
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Jason Yi</h1>
+                      <h5>Outreach Lead</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {jason} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{jasonBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Sai Mattapalli</h1>
+                      <h5>Outreach</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {sai} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{saiBio}</p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Ajit</h1>
+                      <h5>Outreach</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {icon} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
+              </Col>
+              <Col>
+                <p>{ajitBio}</p>  
+              </Col>
+            </Row>
+            </Container>
+           
+        </TabPanel>
+        
+      </Tabs>
+
+
+      
+      
+
+
+      {/* <Tabs defaultActiveKey="team1" id="uncontrolled-tab-example">
+        <Tab eventKey="team1" title="Programming Subteam">
+          <Container fluid>
+          <h1 id = "subteamTitle">Programming Subteam Members</h1>  
+            <Row>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
+                  
+                  <Row>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <h1>Aditya Vasantharao</h1>
+                      <h5>Project Lead</h5>
+                    </Col>
+
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                      <img src = {adi} alt = "Image of Team member"></img>
+                    </Col>
+                   
+                  </Row>
+                 
                 
                 
               </Col>
@@ -82,22 +435,22 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
 
-                <Container>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Audhav Durai</h1>
                       <h5>Programming Lead</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {icon} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
                 
               </Col>
               <Col>
@@ -106,21 +459,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Eugene</h1>
                       <h5>Control Systems Lead</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {icon} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{eugeneBio}</p>
@@ -128,21 +481,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-              <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+               
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Kedar Prasad</h1>
                       <h5>Software Developer</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {kedar} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{kedarBio}</p>
@@ -150,21 +503,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Ram Reddy</h1>
                       <h5>Software Developer</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {ram} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{fakeRamBio}</p>
@@ -172,21 +525,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Ramya Reddy</h1>
                       <h5>Software Developer</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {icon} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{ramyaBio}</p>
@@ -195,7 +548,7 @@ class About extends Component {
 
             
 
-          </Container>
+           
         </Tab>
         
         
@@ -204,21 +557,21 @@ class About extends Component {
           <Container fluid>
             <h1 id = "subteamTitle">Engineering Subteam Members</h1> 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Shahzad Sohail</h1>
                       <h5>Engineering Lead</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {shahzad} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{ShahzadBio}</p>
@@ -226,21 +579,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-              <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+               
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Rushil Umaretiya</h1>
                       <h5>Engineer</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {rushil} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{rushilBio}</p>
@@ -248,21 +601,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Varsha</h1>
                       <h5>Engineer</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {icon} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{varshaBio}</p>
@@ -270,21 +623,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Aileen</h1>
                       <h5>Engineer</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {aileen} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{aileenBio}</p>
@@ -292,21 +645,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Mayuka Valluri</h1>
                       <h5>Engineer</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {mayuka} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{mayukaBio}</p>
@@ -314,7 +667,7 @@ class About extends Component {
             </Row>
            
                        
-          </Container>
+           
         </Tab>
         
         <Tab eventKey="team3" title="Outreach Subteam" >
@@ -322,21 +675,21 @@ class About extends Component {
           <Container fluid >
             <h1 id = "subteamTitle">Outreach Subteam Members</h1> 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Jason Yi</h1>
                       <h5>Outreach Lead</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {jason} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{jasonBio}</p>
@@ -344,21 +697,21 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Sai Mattapalli</h1>
                       <h5>Outreach</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {sai} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{saiBio}</p>
@@ -366,34 +719,37 @@ class About extends Component {
             </Row>
 
             <Row>
-              <Col lg>
-                <Container>
+              <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                 
                   <Row>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <h1>Ajit</h1>
                       <h5>Outreach</h5>
                     </Col>
 
-                    <Col lg>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
                       <img src = {icon} alt = "Image of Team member"></img>
                     </Col>
                    
                   </Row>
-                </Container>
+                 
               </Col>
               <Col>
                 <p>{ajitBio}</p>  
               </Col>
             </Row>
 
-          </Container>
+           
 
         </Tab>
-      </Tabs>
+      </Tabs> */}
+        
        
         </body>
         );
+
+        
       
       
     }
