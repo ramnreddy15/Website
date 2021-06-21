@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component} from "react"; 
 import adi from "./assets/img/Adi.PNG";
 import rushil from "./assets/img/Rushil.PNG";
 import jason from "./assets/img/Jason.PNG";
