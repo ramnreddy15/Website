@@ -1,4 +1,8 @@
 # website
+
+[![CodeQL](https://github.com/PotentiaRobotics/website/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/PotentiaRobotics/website/actions/workflows/codeql-analysis.yml)
+[![Node.js CI](https://github.com/PotentiaRobotics/website/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/PotentiaRobotics/website/actions/workflows/node.js.yml)
+[![DeepSource](https://deepsource.io/gh/PotentiaRobotics/website.svg/?label=active+issues&show_trend=true&token=f88Se7pZUXESLgBqj0fpyzWs)](https://deepsource.io/gh/PotentiaRobotics/website/?ref=repository-badge)
  
 Source for [Potentia Robotics' website](https://www.potentiarobotics.com/) built with React.
 
@@ -100,6 +104,8 @@ in `package.json` or else your pull request will not be accepted.
 5. Have your `base` as master and `compare` to the relevant branch. In the example's case it would be `fix-documentation`.
 6. Now click the ```Compare & pull request``` button, title it something relevant to the issue you are fixing, and lastly you do not need to include a description, but you must include ```Closes #<issue number>```. In the example's case it would be ```Closes #4``` (this will automatically close the pertinent issue).
 
+You will notice that there are tests being run on the code you submitted. These tests check for security issues, accesibility issues, build issues, and code issues. Some of the issues are analyzed by deepsource.io and not easily accesible through github; if you want to see the issues pleam DM me.
+
 # Available Scripts
 
 In the project directory, you can run:
@@ -136,19 +142,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-# Troubleshooting
-
-If you are developing the project, make sure to replace
-
-```
-"start": "serve -s build/"
-```
- with these four lines:     
-```
-"start": "react-scripts start",
-"build": "react-scripts build",
-"test": "react-scripts test",
-"eject": "react-scripts eject"
-``` 
-This is the only way to open up localhost and have it reload with your changes.
