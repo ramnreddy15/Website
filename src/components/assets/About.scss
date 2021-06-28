@@ -1,22 +1,38 @@
-table{
-background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 
-
-margin: auto;
-width: 800px;
-
-}
-th{
-font-size: 20px;
-border: 3px solid black;
-
+* {
+    font-family: Poppins, sans-serif;
 }
 
-td{
-    margin-left: auto;
-    margin-right: auto;
+#title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#container{
  
-    font-size: 16px;
-    border: 3px solid black;
-    padding: 10px;
+    margin-bottom: 50px;
+    
+}
+
+#teamimage{
+    width: 100%;
+    margin-top: 50px;
+}
+
+#ourDescription{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+img{
+    width:100%;
+}
+#subteamTitle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
