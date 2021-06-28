@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react'
+
 import adi from './assets/img/Adi.PNG'
 import rushil from './assets/img/Rushil.PNG'
 import jason from './assets/img/Jason.PNG'
@@ -9,6 +10,7 @@ import ram from './assets/img/Ram.PNG'
 import sai from './assets/img/Sai.PNG'
 import kedar from './assets/img/Kedar.PNG'
 import icon from './assets/img/aboutlogo.PNG'
+
 import classnames from 'classnames'
 
 import GroupPhoto from './assets/img/team_picture.png'
