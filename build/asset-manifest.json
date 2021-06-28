@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6342b2aa.chunk.css",
-    "main.js": "/static/js/main.5937dde3.chunk.js",
-    "main.js.map": "/static/js/main.5937dde3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2400042d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2400042d.js.map",
-    "static/css/2.6390442a.chunk.css": "/static/css/2.6390442a.chunk.css",
-    "static/js/2.1b4ba0e4.chunk.js": "/static/js/2.1b4ba0e4.chunk.js",
-    "static/js/2.1b4ba0e4.chunk.js.map": "/static/js/2.1b4ba0e4.chunk.js.map",
+    "main.css": "/static/css/main.6efb7d71.chunk.css",
+    "main.js": "/static/js/main.02271690.chunk.js",
+    "main.js.map": "/static/js/main.02271690.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5a761096.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5a761096.js.map",
+    "static/css/2.d6920afe.chunk.css": "/static/css/2.d6920afe.chunk.css",
+    "static/js/2.9d879a26.chunk.js": "/static/js/2.9d879a26.chunk.js",
+    "static/js/2.9d879a26.chunk.js.map": "/static/js/2.9d879a26.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.6390442a.chunk.css.map": "/static/css/2.6390442a.chunk.css.map",
-    "static/css/main.6342b2aa.chunk.css.map": "/static/css/main.6342b2aa.chunk.css.map",
-    "static/js/2.1b4ba0e4.chunk.js.LICENSE.txt": "/static/js/2.1b4ba0e4.chunk.js.LICENSE.txt",
+    "static/css/2.d6920afe.chunk.css.map": "/static/css/2.d6920afe.chunk.css.map",
+    "static/css/main.6efb7d71.chunk.css.map": "/static/css/main.6efb7d71.chunk.css.map",
+    "static/js/2.9d879a26.chunk.js.LICENSE.txt": "/static/js/2.9d879a26.chunk.js.LICENSE.txt",
     "static/media/0001.0d0d8dab.jpg": "/static/media/0001.0d0d8dab.jpg",
     "static/media/0002.0b2733d8.jpg": "/static/media/0002.0b2733d8.jpg",
     "static/media/0003.4ab744ab.jpg": "/static/media/0003.4ab744ab.jpg",
@@ -26,7 +26,7 @@
     "static/media/Sai.cb78b584.PNG": "/static/media/Sai.cb78b584.PNG",
     "static/media/Shahzad.1270f1d1.PNG": "/static/media/Shahzad.1270f1d1.PNG",
     "static/media/aboutlogo.c28a7eae.PNG": "/static/media/aboutlogo.c28a7eae.PNG",
-    "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.cc252f2c.woff",
+    "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.dfd0ea12.woff2",
     "static/media/bot2.d972cd79.png": "/static/media/bot2.d972cd79.png",
     "static/media/logo_tr_bg.baf63c10.png": "/static/media/logo_tr_bg.baf63c10.png",
     "static/media/olympian_hero.8a17602f.png": "/static/media/olympian_hero.8a17602f.png",
@@ -34,10 +34,10 @@
     "static/media/team_picture.5256ab36.png": "/static/media/team_picture.5256ab36.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2400042d.js",
-    "static/css/2.6390442a.chunk.css",
-    "static/js/2.1b4ba0e4.chunk.js",
-    "static/css/main.6342b2aa.chunk.css",
-    "static/js/main.5937dde3.chunk.js"
+    "static/js/runtime-main.5a761096.js",
+    "static/css/2.d6920afe.chunk.css",
+    "static/js/2.9d879a26.chunk.js",
+    "static/css/main.6efb7d71.chunk.css",
+    "static/js/main.02271690.chunk.js"
   ]
 }
