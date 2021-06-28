@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: #293241;
-    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
     color: #555;
