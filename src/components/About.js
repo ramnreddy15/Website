@@ -61,13 +61,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Aditya Vasantharao</h1>
-                        <h5>Project Lead</h5>
-                      </Col>
+                      <h1>Aditya Vasantharao</h1>
+                      <h5>Project Lead</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={adi} alt='Image of Team member' />
-                      </Col>
+                      <img src={adi} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -86,13 +86,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Audhav Durai</h1>
-                        <h5>Programming Lead</h5>
-                      </Col>
+                      <h1>Audhav Durai</h1>
+                      <h5>Programming Lead</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={icon} alt='Image of Team member' />
-                      </Col>
+                      <img src={icon} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
                   {/* </Container> */}
@@ -109,13 +109,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Eugene</h1>
-                        <h5>Control Systems Lead</h5>
-                      </Col>
+                      <h1>Eugene</h1>
+                      <h5>Control Systems Lead</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={icon} alt='Image of Team member' />
-                      </Col>
+                      <img src={icon} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -130,13 +130,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Ram Reddy</h1>
-                        <h5>Dynamic Balance Lead</h5>
-                      </Col>
+                      <h1>Ram Reddy</h1>
+                      <h5>Dynamic Balance Lead</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={ram} alt='Image of Team member' />
-                      </Col>
+                      <img src={ram} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -152,13 +152,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Kedar Prasad</h1>
-                        <h5>Software Developer</h5>
-                      </Col>
+                      <h1>Kedar Prasad</h1>
+                      <h5>Software Developer</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={kedar} alt='Image of Team member' />
-                      </Col>
+                      <img src={kedar} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -174,13 +174,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Ramya Reddy</h1>
-                        <h5>Software Developer</h5>
-                      </Col>
+                      <h1>Ramya Reddy</h1>
+                      <h5>Software Developer</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={icon} alt='Image of Team member' />
-                      </Col>
+                      <img src={icon} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -202,13 +202,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Shahzad Sohail</h1>
-                        <h5>Engineering Lead</h5>
-                      </Col>
+                      <h1>Shahzad Sohail</h1>
+                      <h5>Engineering Lead</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={shahzad} alt='Image of Team member' />
-                      </Col>
+                      <img src={shahzad} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -224,13 +224,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Rushil Umaretiya</h1>
-                        <h5>Engineer</h5>
-                      </Col>
+                      <h1>Rushil Umaretiya</h1>
+                      <h5>Engineer</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={rushil} alt='Image of Team member' />
-                      </Col>
+                      <img src={rushil} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -246,13 +246,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Varsha</h1>
-                        <h5>Engineer</h5>
-                      </Col>
+                      <h1>Varsha</h1>
+                      <h5>Engineer</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={icon} alt='Image of Team member' />
-                      </Col>
+                      <img src={icon} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -268,13 +268,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Aileen</h1>
-                        <h5>Engineer</h5>
-                      </Col>
+                      <h1>Aileen</h1>
+                      <h5>Engineer</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={aileen} alt='Image of Team member' />
-                      </Col>
+                      <img src={aileen} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -290,13 +290,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Mayuka Valluri</h1>
-                        <h5>Engineer</h5>
-                      </Col>
+                      <h1>Mayuka Valluri</h1>
+                      <h5>Engineer</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={mayuka} alt='Image of Team member' />
-                      </Col>
+                      <img src={mayuka} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -318,13 +318,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Jason Yi</h1>
-                        <h5>Outreach Lead</h5>
-                      </Col>
+                      <h1>Jason Yi</h1>
+                      <h5>Outreach Lead</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={jason} alt='Image of Team member' />
-                      </Col>
+                      <img src={jason} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -340,13 +340,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Sai Mattapalli</h1>
-                        <h5>Outreach</h5>
-                      </Col>
+                      <h1>Sai Mattapalli</h1>
+                      <h5>Outreach</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={sai} alt='Image of Team member' />
-                      </Col>
+                      <img src={sai} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
@@ -362,13 +362,13 @@ class About extends Component {
                   <Row>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <h1>Ajit</h1>
-                        <h5>Outreach</h5>
-                      </Col>
+                      <h1>Ajit</h1>
+                      <h5>Outreach</h5>
+                    </Col>
 
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <img src={icon} alt='Image of Team member' />
-                      </Col>
+                      <img src={icon} alt='Image of Team member' />
+                    </Col>
 
                   </Row>
 
