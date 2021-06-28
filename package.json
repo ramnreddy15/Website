@@ -33,6 +33,7 @@
     "yarn": "^1.22.10"
   },
   "scripts": {
+    "build": "CI=false && react-scripts build",
     "start": "serve -s build/"
   },
   "eslintConfig": {
