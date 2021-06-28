@@ -1,6 +1,5 @@
 {
   "name": "potentia-site",
-  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -55,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "node-sass": "^6.0.0",
     "react-spring": "^8.0.27"
   }
 }
